@@ -37,6 +37,12 @@ export default function DashboardPage() {
           <div className="flex justify-between items-center h-16">
             <h1 className="text-h4 text-neutral-900">stack20</h1>
             <div className="flex items-center gap-4">
+              <button
+                onClick={() => signOut()}
+                className="text-body-sm text-neutral-600 hover:text-neutral-900 font-medium transition-colors"
+              >
+                Sign out
+              </button>
               <div className="text-right">
                 <p className="text-body-sm font-medium text-neutral-900">
                   {session.user?.name}
